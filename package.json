@@ -1,7 +1,7 @@
 {
   "name": "url-query-search",
-  "version": "0.0.1",
-  "description": "extract url params.",
+  "version": "0.0.2",
+  "description": "extract url params, tested with react app.",
   "main": "index.js",
   "scripts": {
     "build": "babel --presets env src -d ./ --ignore src/index.test.js",

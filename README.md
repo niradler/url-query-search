@@ -7,3 +7,4 @@ extract url params.
 - urlQueryParams.getParams(); //get all params in object
 - urlQueryParams.getParam(paramName); //get param by name
 - urlQueryParams.setParam(paramName,value); //set param by name and value
+- urlQueryParams.getPathParams(path); //get path params, path="/*/id" *=ignore , return {id}
