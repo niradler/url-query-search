@@ -33,13 +33,14 @@ const getPathParams = (path) => {
     .split('/')
     .slice(1);
   let a_path = path.split('/');
-  if (path[0] === "") {
+  if (!a_path[0]) {
     a_path = a_path.slice(1);
   }
   const obj = {};
   for (let i = 0; i < a_path.length; i++) {
-    if(a_path[i] !== '*')
-    obj[a_path[i]] = path_params[i]
+    if (a_path[i] !== '*') {
+      obj[a_path[i]] = path_params[i];
+    }
   }
   return obj;
 }
